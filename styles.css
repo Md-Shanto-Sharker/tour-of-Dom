@@ -1,0 +1,14 @@
+h1{
+    color: red;
+}
+ul{
+    color: tomato;
+}
+#all-fruits{
+    color: rgb(96, 238, 53);
+}
+.important-places{
+    color: rgb(175, 11, 216);
+    font-size: large;
+    font-weight: bolder;
+}
