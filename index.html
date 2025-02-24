@@ -20,7 +20,7 @@
             <li>bonobash</li>
         </ul>
         </section>
-        <section>
+        <section class="fruits-container">
             <h1 id="all-fruits">Fruits I like</h1>
             <ul>
                 <li>Apple</li>
@@ -55,7 +55,13 @@
 
         const Places = document.getElementsByClassName('important-places');
         for(let x of Places){
-            console.log(x.innerText);
+            // console.log(x.innerText);
+        }
+
+
+        const query = document.querySelectorAll('.fruits-container')
+        for(let q of query){
+            console.log(q.innerText);
         }
     </script>
 </body>

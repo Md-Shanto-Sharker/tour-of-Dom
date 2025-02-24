@@ -12,3 +12,6 @@ ul{
     font-size: large;
     font-weight: bolder;
 }
+.fruits-container li{
+    color: blue;
+}
