@@ -30,7 +30,7 @@
     </section>
 
 
-    <section>
+    <section  id="Places-container">
         <h1>Places I like to visit</h1>
         <ul>
             <li class="important-places">sundorban</li>
@@ -41,6 +41,7 @@
     </section>
     </main>
     <script src="dom.js"></script>
+    <script src="stylein.js"></script>
     <script>
         const liCollection = document.getElementsByTagName('li')
         for(let i of liCollection){
@@ -61,7 +62,7 @@
 
         const query = document.querySelectorAll('.fruits-container')
         for(let q of query){
-            console.log(q.innerText);
+            // console.log(q.innerText);
         }
     </script>
 </body>
