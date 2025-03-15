@@ -1,17 +1,10 @@
 h1{
-    color: red;
+    color: lightcoral;
 }
-ul{
-    color: tomato;
+.large-text{
+    font-size: 2em;
 }
-#all-fruits{
-    color: rgb(96, 238, 53);
-}
-.important-places{
-    color: rgb(175, 11, 216);
-    font-size: large;
-    font-weight: bolder;
-}
-.fruits-container li{
-    color: blue;
+
+.text-center{
+    text-align: center;
 }

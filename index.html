@@ -1,70 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour of DOM</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        .fruits-container  li{
+            color: blue;
+        }
+      li {
+        color:tomato;
+      }
+      #fruits-title{
+        color: rgb(0, 0, 0);
+      }
+      .important-places{
+        color:violet ;
+      }
+    </style>
+  </head>
+  <body>
     <header>
-        <h1>Welcome to my DOM</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium temporibus autem tempora aut labore sit. Odio ullam fugiat quidem minus amet incidunt unde deleniti, quaerat, asperiores distinctio voluptatem similique aut.</p>
+      <h1>Welcome to my DOM</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur cum fuga nisi eum libero ab voluptas, nobis iure, debitis excepturi dicta nam quae, aperiam tenetur quo corrupti esse vero? Perferendis!</p>
     </header>
-    <main id="main-content">
-        <section>
-            <h1>My Awesome DOM de baba</h1>
+    <main>
+     <section>
+        <h1>My Awesome DOM de baba</h1>
         <ul>
-            <li>Jalali set</li>
-            <li>Shafayet</li>
-            <li>bonobash</li>
+          <li>Jalali Set</li>
+          <li>Shafayet</li>
+          <li>bonobash</li>
         </ul>
-        </section>
-        <section class="fruits-container">
-            <h1 id="all-fruits">Fruits I like</h1>
-            <ul>
-                <li>Apple</li>
-                <li>Mango</li>
-                <li>banana</li>
-            </ul>
-    </section>
-
-
-    <section  id="Places-container">
+     </section>
+      <section class="fruits-container">
+        <h1 id="fruits-title">Fruits I like</h1>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Carrot</li>
+          </ul>
+      </section>
+      <section id="places-container" class="large-text">
         <h1>Places I like to visit</h1>
-        <ul id="Places-list">
-            <li class="important-places">sundorban</li>
+        <ul>
+            <li class="important-places">Soondarban</li>
             <li class="important-places">bandorban</li>
-            <li class="important-places">katabon</li>
-            <li>salbon</li>
-        </ul>
-    </section>
+            <li class="important-places">Katabon</li>
+            <li class="other-place">Shalbon</li>
+          </ul>
+      </section>
     </main>
-    <script src="dom.js"></script>
-    <script src="stylein.js"></script>
-    <script src="append.js"></script>
     <script>
-        const liCollection = document.getElementsByTagName('li')
-        for(let i of liCollection){
-            // console.log(i.innerText);
-        }
+      const liCollection = document.getElementsByTagName('li');
+      for(const i of liCollection){
+        // console.log(i.innerText);
+      }
+
+      const allHeading = document.getElementsByTagName('h1');
+      for(const n of allHeading){
+        // console.log(n.innerText);
+      }
+      const important_places = document.getElementsByClassName('important-places');
+      for(const i of important_places){
+        // console.log(i.innerText);
+      }
+
+      const other_place = document.getElementsByClassName('other-place');
+      for(const i of other_place){
+        // console.log(i.innerText);
+      }
 
 
-        const h1Collaction = document.getElementsByTagName('h1');
-        for(let  n of h1Collaction){
-            // console.log(n.innerText);
-        }
+      const someLi = document.querySelectorAll('.fruits-container li') ;
+      for(const i of someLi){
+        // console.log(i.innerText);
+      }
 
-        const Places = document.getElementsByClassName('important-places');
-        for(let x of Places){
-            // console.log(x.innerText);
-        }
-
-
-        const query = document.querySelectorAll('.fruits-container')
-        for(let q of query){
-            // console.log(q.innerText);
-        }
+      const li = document.querySelector('.fruits-container li');
+    //   console.log(li);
     </script>
-</body>
+    <script src="js/dom.js"></script>
+    <script src="js/stylesInJs.js"></script>
+  </body>
 </html>
